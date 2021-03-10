@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>搭建 vuepress 静态网站 | 最大的麦穗</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="最大的一穗就是你刚刚摘下的">
+    <link rel="preload" href="/assets/css/0.styles.6ea603a2.css" as="style"><link rel="preload" href="/assets/js/app.dbe66a1e.js" as="script"><link rel="preload" href="/assets/js/6.2964ec12.js" as="script"><link rel="preload" href="/assets/js/2.e2347f80.js" as="script"><link rel="preload" href="/assets/js/1.e61c136f.js" as="script"><link rel="preload" href="/assets/js/105.aa731f11.js" as="script"><link rel="prefetch" href="/assets/js/10.f6ae8b3e.js"><link rel="prefetch" href="/assets/js/100.38b591bb.js"><link rel="prefetch" href="/assets/js/101.cb478c5a.js"><link rel="prefetch" href="/assets/js/102.7d47e130.js"><link rel="prefetch" href="/assets/js/103.03a9d90e.js"><link rel="prefetch" href="/assets/js/104.27737c75.js"><link rel="prefetch" href="/assets/js/106.d78f2caf.js"><link rel="prefetch" href="/assets/js/107.e0908b81.js"><link rel="prefetch" href="/assets/js/108.781636d5.js"><link rel="prefetch" href="/assets/js/109.f59b329a.js"><link rel="prefetch" href="/assets/js/11.376a95c6.js"><link rel="prefetch" href="/assets/js/110.65881c0c.js"><link rel="prefetch" href="/assets/js/111.f9dfeca7.js"><link rel="prefetch" href="/assets/js/112.edfee55b.js"><link rel="prefetch" href="/assets/js/113.2c79a7c0.js"><link rel="prefetch" href="/assets/js/114.92a1e398.js"><link rel="prefetch" href="/assets/js/115.e9f66b62.js"><link rel="prefetch" href="/assets/js/116.e139ecdb.js"><link rel="prefetch" href="/assets/js/117.a79afa2b.js"><link rel="prefetch" href="/assets/js/12.11ab44ef.js"><link rel="prefetch" href="/assets/js/13.26b63d28.js"><link rel="prefetch" href="/assets/js/14.352de0d3.js"><link rel="prefetch" href="/assets/js/15.4365472b.js"><link rel="prefetch" href="/assets/js/16.9637a686.js"><link rel="prefetch" href="/assets/js/17.9e6019c7.js"><link rel="prefetch" href="/assets/js/18.617201bc.js"><link rel="prefetch" href="/assets/js/19.13a8bf47.js"><link rel="prefetch" href="/assets/js/20.efe9e1c1.js"><link rel="prefetch" href="/assets/js/21.7b66eac5.js"><link rel="prefetch" href="/assets/js/22.786a942a.js"><link rel="prefetch" href="/assets/js/23.efd80bc8.js"><link rel="prefetch" href="/assets/js/24.86853d89.js"><link rel="prefetch" href="/assets/js/25.9788e953.js"><link rel="prefetch" href="/assets/js/26.94de956e.js"><link rel="prefetch" href="/assets/js/27.c17f4177.js"><link rel="prefetch" href="/assets/js/28.4968f6d2.js"><link rel="prefetch" href="/assets/js/29.b56d0239.js"><link rel="prefetch" href="/assets/js/30.234b0b47.js"><link rel="prefetch" href="/assets/js/31.fb1231ac.js"><link rel="prefetch" href="/assets/js/32.d1fd3fbf.js"><link rel="prefetch" href="/assets/js/33.b43be3ad.js"><link rel="prefetch" href="/assets/js/34.2119ef43.js"><link rel="prefetch" href="/assets/js/35.67c5818d.js"><link rel="prefetch" href="/assets/js/36.2c839781.js"><link rel="prefetch" href="/assets/js/37.1331cc51.js"><link rel="prefetch" href="/assets/js/38.5abf0711.js"><link rel="prefetch" href="/assets/js/39.2827f4d0.js"><link rel="prefetch" href="/assets/js/4.29d72ff3.js"><link rel="prefetch" href="/assets/js/40.a78a0c8a.js"><link rel="prefetch" href="/assets/js/41.2e6e0604.js"><link rel="prefetch" href="/assets/js/42.5ba3a405.js"><link rel="prefetch" href="/assets/js/43.cb43292b.js"><link rel="prefetch" href="/assets/js/44.6a599937.js"><link rel="prefetch" href="/assets/js/45.eb7c133c.js"><link rel="prefetch" href="/assets/js/46.b301fea0.js"><link rel="prefetch" href="/assets/js/47.60eb1c1c.js"><link rel="prefetch" href="/assets/js/48.9e1ed03a.js"><link rel="prefetch" href="/assets/js/49.6e1a5b83.js"><link rel="prefetch" href="/assets/js/5.1ec73d60.js"><link rel="prefetch" href="/assets/js/50.4d5251ef.js"><link rel="prefetch" href="/assets/js/51.791f9159.js"><link rel="prefetch" href="/assets/js/52.60af352c.js"><link rel="prefetch" href="/assets/js/53.272e751d.js"><link rel="prefetch" href="/assets/js/54.06da6025.js"><link rel="prefetch" href="/assets/js/55.753a607f.js"><link rel="prefetch" href="/assets/js/56.44cf00a0.js"><link rel="prefetch" href="/assets/js/57.f3f75715.js"><link rel="prefetch" href="/assets/js/58.9d4f0b92.js"><link rel="prefetch" href="/assets/js/59.c264fced.js"><link rel="prefetch" href="/assets/js/60.dfa8c662.js"><link rel="prefetch" href="/assets/js/61.55217737.js"><link rel="prefetch" href="/assets/js/62.d554d169.js"><link rel="prefetch" href="/assets/js/63.77bfef4e.js"><link rel="prefetch" href="/assets/js/64.1f34256c.js"><link rel="prefetch" href="/assets/js/65.ae15ec39.js"><link rel="prefetch" href="/assets/js/66.110520b5.js"><link rel="prefetch" href="/assets/js/67.116c14eb.js"><link rel="prefetch" href="/assets/js/68.3849cba7.js"><link rel="prefetch" href="/assets/js/69.531d0ab1.js"><link rel="prefetch" href="/assets/js/7.8ef28dc9.js"><link rel="prefetch" href="/assets/js/70.b123eb76.js"><link rel="prefetch" href="/assets/js/71.2deb06b7.js"><link rel="prefetch" href="/assets/js/72.654a587f.js"><link rel="prefetch" href="/assets/js/73.c48f16fd.js"><link rel="prefetch" href="/assets/js/74.4b94831d.js"><link rel="prefetch" href="/assets/js/75.120af7f0.js"><link rel="prefetch" href="/assets/js/76.aeee94ab.js"><link rel="prefetch" href="/assets/js/77.3c7a8d7e.js"><link rel="prefetch" href="/assets/js/78.05619f3e.js"><link rel="prefetch" href="/assets/js/79.8cb9c431.js"><link rel="prefetch" href="/assets/js/8.818f9b8d.js"><link rel="prefetch" href="/assets/js/80.6c5c7276.js"><link rel="prefetch" href="/assets/js/81.216b2b09.js"><link rel="prefetch" href="/assets/js/82.d60d1453.js"><link rel="prefetch" href="/assets/js/83.6ce437f1.js"><link rel="prefetch" href="/assets/js/84.ee966268.js"><link rel="prefetch" href="/assets/js/85.1c2f5468.js"><link rel="prefetch" href="/assets/js/86.01c39eab.js"><link rel="prefetch" href="/assets/js/87.fe13a62c.js"><link rel="prefetch" href="/assets/js/88.925198ce.js"><link rel="prefetch" href="/assets/js/89.f5e3d3ac.js"><link rel="prefetch" href="/assets/js/9.eac9afae.js"><link rel="prefetch" href="/assets/js/90.522493a0.js"><link rel="prefetch" href="/assets/js/91.e9ae217a.js"><link rel="prefetch" href="/assets/js/92.6aa6d70f.js"><link rel="prefetch" href="/assets/js/93.71d05aa3.js"><link rel="prefetch" href="/assets/js/94.aca8d1a0.js"><link rel="prefetch" href="/assets/js/95.92c86ecc.js"><link rel="prefetch" href="/assets/js/96.42ad26ce.js"><link rel="prefetch" href="/assets/js/97.fe9e4e65.js"><link rel="prefetch" href="/assets/js/98.74466283.js"><link rel="prefetch" href="/assets/js/99.7a85a431.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6ea603a2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><div></div> <header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">最大的麦穗</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="丰年" class="dropdown-title"><span class="title">丰年</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          技术
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/丰年/技术/javascript/前端获取 ip.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/技术/electron/electron.html" class="nav-link">
+  electron
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/技术/nodejs/child_process.html" class="nav-link">
+  nodejs
+</a></li></ul></li><li class="dropdown-item"><h4>
+          算法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/丰年/算法/图形学/获取网格中两个点连线经过的格子.html" class="nav-link">
+  图形学
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/算法/高德地图数学计算库/" class="nav-link">
+  高德地图数学计算库
+</a></li></ul></li><li class="dropdown-item"><h4>
+          学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/丰年/学习/英语/" class="nav-link">
+  英语
+</a></li></ul></li><li class="dropdown-item"><h4>
+          支持
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/丰年/支持/git/Git.html" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/支持/npm/npm 说明.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/支持/工具/语音合成.html" class="nav-link">
+  工具
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/支持/资源/网站导航.html" class="nav-link">
+  资源
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="指南" class="dropdown-title"><span class="title">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          旅游
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/指南/旅游/美国/美签.html" class="nav-link">
+  美国
+</a></li><li class="dropdown-subitem"><a href="/zh/指南/旅游/国内/西藏.html" class="nav-link">
+  国内
+</a></li></ul></li><li class="dropdown-item"><h4>
+          观点
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/指南/观点/音乐/一首歌.html" class="nav-link">
+  音乐
+</a></li><li class="dropdown-subitem"><a href="/zh/指南/观点/那兔/" class="nav-link">
+  那兔
+</a></li></ul></li><li class="dropdown-item"><h4>
+          思想
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/指南/思想/摘录/维度的质量.html" class="nav-link">
+  摘录
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/分类/系统/mac/mac 指令 tree.html" class="nav-link">
+  mac
+</a></li><li class="dropdown-subitem"><a href="/zh/分类/系统/windows/windows 隐藏批处理窗口.html" class="nav-link">
+  windows
+</a></li><li class="dropdown-subitem"><a href="/zh/分类/系统/vpn/v2ray.html" class="nav-link">
+  vpn
+</a></li><li class="dropdown-subitem"><a href="/zh/分类/系统/网络/系统网络代理.html" class="nav-link">
+  网络
+</a></li></ul></li><li class="dropdown-item"><h4>
+          软件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/分类/软件/visual studio code/visual studio code.html" class="nav-link">
+  visual studio code
+</a></li><li class="dropdown-subitem"><a href="/zh/分类/软件/microsoft remote desktop/远程桌面传输文件.html" class="nav-link">
+  microsoft remote desktop
+</a></li><li class="dropdown-subitem"><a href="/zh/分类/软件/winrar/命令行压缩文件.html" class="nav-link">
+  winrar
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/zh/搭建/create.html" class="nav-link">
+  搭建
+</a></div> <a href="https://github.com/xiaoxuefengnian/wheatear" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="丰年" class="dropdown-title"><span class="title">丰年</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          技术
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/丰年/技术/javascript/前端获取 ip.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/技术/electron/electron.html" class="nav-link">
+  electron
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/技术/nodejs/child_process.html" class="nav-link">
+  nodejs
+</a></li></ul></li><li class="dropdown-item"><h4>
+          算法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/丰年/算法/图形学/获取网格中两个点连线经过的格子.html" class="nav-link">
+  图形学
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/算法/高德地图数学计算库/" class="nav-link">
+  高德地图数学计算库
+</a></li></ul></li><li class="dropdown-item"><h4>
+          学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/丰年/学习/英语/" class="nav-link">
+  英语
+</a></li></ul></li><li class="dropdown-item"><h4>
+          支持
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/丰年/支持/git/Git.html" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/支持/npm/npm 说明.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/支持/工具/语音合成.html" class="nav-link">
+  工具
+</a></li><li class="dropdown-subitem"><a href="/zh/丰年/支持/资源/网站导航.html" class="nav-link">
+  资源
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="指南" class="dropdown-title"><span class="title">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          旅游
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/指南/旅游/美国/美签.html" class="nav-link">
+  美国
+</a></li><li class="dropdown-subitem"><a href="/zh/指南/旅游/国内/西藏.html" class="nav-link">
+  国内
+</a></li></ul></li><li class="dropdown-item"><h4>
+          观点
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/指南/观点/音乐/一首歌.html" class="nav-link">
+  音乐
+</a></li><li class="dropdown-subitem"><a href="/zh/指南/观点/那兔/" class="nav-link">
+  那兔
+</a></li></ul></li><li class="dropdown-item"><h4>
+          思想
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/指南/思想/摘录/维度的质量.html" class="nav-link">
+  摘录
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          系统
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/分类/系统/mac/mac 指令 tree.html" class="nav-link">
+  mac
+</a></li><li class="dropdown-subitem"><a href="/zh/分类/系统/windows/windows 隐藏批处理窗口.html" class="nav-link">
+  windows
+</a></li><li class="dropdown-subitem"><a href="/zh/分类/系统/vpn/v2ray.html" class="nav-link">
+  vpn
+</a></li><li class="dropdown-subitem"><a href="/zh/分类/系统/网络/系统网络代理.html" class="nav-link">
+  网络
+</a></li></ul></li><li class="dropdown-item"><h4>
+          软件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/分类/软件/visual studio code/visual studio code.html" class="nav-link">
+  visual studio code
+</a></li><li class="dropdown-subitem"><a href="/zh/分类/软件/microsoft remote desktop/远程桌面传输文件.html" class="nav-link">
+  microsoft remote desktop
+</a></li><li class="dropdown-subitem"><a href="/zh/分类/软件/winrar/命令行压缩文件.html" class="nav-link">
+  winrar
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/zh/搭建/create.html" class="nav-link">
+  搭建
+</a></div> <a href="https://github.com/xiaoxuefengnian/wheatear" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>搭建</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/搭建/create.html" class="active sidebar-link">搭建 vuepress 静态网站</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/搭建/create.html#准备工作" class="sidebar-link">准备工作</a></li><li class="sidebar-sub-header"><a href="/zh/搭建/create.html#目录结构" class="sidebar-link">目录结构</a></li><li class="sidebar-sub-header"><a href="/zh/搭建/create.html#基本配置" class="sidebar-link">基本配置</a></li><li class="sidebar-sub-header"><a href="/zh/搭建/create.html#配置主题" class="sidebar-link">配置主题</a></li><li class="sidebar-sub-header"><a href="/zh/搭建/create.html#添加插件" class="sidebar-link">添加插件</a></li></ul></li><li><a href="/zh/搭建/deploy.html" class="sidebar-link">部署</a></li><li><a href="/zh/搭建/locales.html" class="sidebar-link">多语言</a></li><li><a href="/zh/搭建/auto.html" class="sidebar-link">自动化</a></li><li><a href="/zh/搭建/plugins.html" class="sidebar-link">插件</a></li><li><a href="/zh/搭建/customize.html" class="sidebar-link">主题</a></li><li><a href="/zh/搭建/home.html" class="sidebar-link">布局</a></li><li><a href="/zh/搭建/gitalk.html" class="sidebar-link">评论</a></li><li><a href="/zh/搭建/analysis.html" class="sidebar-link">网站分析</a></li><li><a href="/zh/搭建/404 page.html" class="sidebar-link">404 页面</a></li><li><a href="/zh/搭建/ignore.html" class="sidebar-link">忽略文件</a></li><li><a href="/zh/搭建/note.html" class="sidebar-link">注意</a></li><li><a href="/zh/搭建/update.html" class="sidebar-link">升级</a></li><li><a href="/zh/搭建/todo.html" class="sidebar-link">后续更新</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="搭建-vuepress-静态网站"><a href="#搭建-vuepress-静态网站" class="header-anchor">#</a> 搭建 vuepress 静态网站</h1> <p>以本项目 <a href="https://github.com/xiaoxuefengnian/wheatear" target="_blank" rel="noopener noreferrer">wheatear<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 为例</p> <p>基于 vuepress 1.0.3 <a href="https://v1.vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>后续版本升级详见【<a href="/zh/搭建/update.html">升级</a>】</p> <h2 id="准备工作"><a href="#准备工作" class="header-anchor">#</a> 准备工作</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 创建项目目录</span>
+<span class="token function">mkdir</span> wheatear
+<span class="token builtin class-name">cd</span> wheatear
+
+<span class="token comment"># 将 VuePress 作为一个本地依赖安装</span>
+<span class="token function">yarn</span> <span class="token function">add</span> -D vuepress <span class="token comment"># 或者：npm install -D vuepress</span>
+
+<span class="token comment"># 新建一个 docs 文件夹</span>
+<span class="token function">mkdir</span> docs
+
+<span class="token comment"># 查看目录结构</span>
+tree -L <span class="token number">1</span>
+</code></pre></div><p>此时的目录结构应该是这样的</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">.</span>
+├── docs
+├── node_modules
+├── package.json
+└── yarn.lock
+</code></pre></div><p>打开 package.json 增加以下脚本</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这时运行起 dev server，就可以开始写作了</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> docs:dev <span class="token comment"># 或者：npm run docs:dev</span>
+</code></pre></div><p>要生成静态的 HTML 文件，运行</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> docs:build <span class="token comment"># 或者：npm run docs:build</span>
+</code></pre></div><h2 id="目录结构"><a href="#目录结构" class="header-anchor">#</a> 目录结构</h2> <p>在 docs 目录下</p> <p>新建 .vuepress 目录 用于存放全局的配置、组件、静态资源等</p> <p>新建 zh 目录 用于 存放文章</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 进入 docs 目录</span>
+<span class="token builtin class-name">cd</span> docs/
+<span class="token function">mkdir</span> .vuepress
+<span class="token function">mkdir</span> zh
+<span class="token function">touch</span> README.md
+
+<span class="token comment"># 配置 .vuepress 目录</span>
+<span class="token builtin class-name">cd</span> .vuepress
+<span class="token function">mkdir</span> nav
+<span class="token function">mkdir</span> public
+<span class="token function">touch</span> config.js
+
+<span class="token comment"># 查看目录结构</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+tree -a -L <span class="token number">2</span>
+</code></pre></div><p>此时的目录结构应该是这样的</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">.</span>
+├── .vuepress
+│   ├── config.js
+│   ├── nav
+│   └── public
+├── README.md
+└── zh
+</code></pre></div><p>这里的目录结构不完全相同于官网推荐的 <a href="https://v1.vuepress.vuejs.org/zh/guide/directory-structure.html" target="_blank" rel="noopener noreferrer">目录结构<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="基本配置"><a href="#基本配置" class="header-anchor">#</a> 基本配置</h2> <p>继续编辑 docs/.vuepress/config.js</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**
+   * 部署站点的基础路径，如果你想让你的网站部署到一个子路径下，你将需要设置它
+   * 如 Github pages，如果你想将你的网站部署到 https://foo.github.io/bar/
+   * 那么 base 应该被设置成 &quot;/bar/&quot;，它的值应当总是以斜杠开始，并以斜杠结束
+   * 类型: string
+   * 默认值: /
+   */</span>
+  base<span class="token operator">:</span> <span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 网站的标题，它将会被用作所有页面标题的前缀，同时，默认主题下，它将显示在导航栏（navbar）上
+   * 类型: string
+   * 默认值: undefined
+   */</span>
+  title<span class="token operator">:</span> <span class="token string">&quot;最大的麦穗&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 网站的描述，它将会以 &lt;meta&gt; 标签渲染到当前页面的 HTML 中
+   * 类型: string
+   * 默认值: undefined
+   */</span>
+  description<span class="token operator">:</span> <span class="token string">&quot;选择前，我们要慎重。选择时，我们要果断。选择后，我们要淡定。&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 额外的需要被注入到当前页面的 HTML &lt;head&gt; 中的标签
+   * 每个标签都可以以 [tagName, { attrName: attrValue }, innerHTML?] 的格式指定
+   * 类型: Array
+   * 默认值: []
+   */</span>
+  head<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&quot;link&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        rel<span class="token operator">:</span> <span class="token string">&quot;icon&quot;</span><span class="token punctuation">,</span>
+        href<span class="token operator">:</span> <span class="token string">&quot;/img/favicon.ico&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 指定用于 dev server 的主机名
+   * 类型: string
+   * 默认值: '0.0.0.0'
+   */</span>
+  host<span class="token operator">:</span> <span class="token string">&quot;0.0.0.0&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 指定用于 dev server 的主机名
+   * 类型: number
+   * 默认值: 8080
+   */</span>
+  port<span class="token operator">:</span> <span class="token number">8080</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 指定客户端文件的临时目录
+   * 类型: string
+   * 默认值: /path/to/@vuepress/core/.temp
+   */</span>
+  temp<span class="token operator">:</span> <span class="token string">&quot;/path/to/@vuepress/core/.temp&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 指定 vuepress build 的输出目录
+   * 类型: string
+   * 默认值: .vuepress/dist
+   */</span>
+  dest<span class="token operator">:</span> <span class="token string">&quot;.vuepress/dist&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 提供多语言支持的语言配置
+   * 类型: { [path: string]: Object }
+   * 默认值: undefined
+   */</span>
+  locales<span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 一个函数，用来控制对于哪些文件，是需要生成 &lt;link rel=&quot;prefetch&quot;&gt; 资源提示的
+   * 类型: Function
+   * 默认值: () =&gt; true
+   */</span>
+  <span class="token function-variable function">shouldPrefetch</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * VuePress 默认使用了 cache-loader 来大大地加快 webpack 的编译速度
+   * 此选项可以用于指定 cache 的路径，同时也可以通过设置为 false 来在每次构建之前删除 cache
+   * 类型: boolean|string
+   * 默认值: true
+   */</span>
+  cache<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 指定额外的需要被监听的文件
+   * 你可以监听任何想监听的文件，文件变动将会触发 vuepress 重新构建，并实时更新。
+   * 类型: Array
+   * 默认值: []
+   */</span>
+  extraWatchFiles<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// '.vuepress/nav/en.js',</span>
+    <span class="token string">&quot;.vuepress/nav/zh.js&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 当你使用自定义主题的时候，需要指定它。
+   * 当值为 &quot;foo&quot; 时，VuePress 将会尝试去加载位于 node_modules/vuepress-theme-foo/Layout.vue 的主题组件
+   * 类型: string
+   * 默认值: undefined
+   */</span>
+  theme<span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 为当前的主题提供一些配置，这些选项依赖于你正在使用的主题
+   * 类型: Object
+   * 默认值: {}
+   */</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 插件
+   * 类型: Object|Array
+   * 默认值: undefined
+   */</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 如果你的对象只有那些 “常青树” 浏览器，你可以将其设置成 true
+   * 这将会禁止 ESNext 到 ES5 的转译以及对 IE 的 polyfills，同时会带来更快的构建速度和更小的文件体积
+   * 类型: boolean|Function
+   * 默认值: false
+   */</span>
+  evergreen<span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>注意这里已经在 docs/.vuepress/public/img 目录下放入了 favicon.ico 图标</p> <h2 id="配置主题"><a href="#配置主题" class="header-anchor">#</a> 配置主题</h2> <p>在 docs/.vuepress/nav 目录下增加 zh.js，代码如下</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    text<span class="token operator">:</span> <span class="token string">&quot;搭建指南&quot;</span><span class="token punctuation">,</span>
+    link<span class="token operator">:</span> <span class="token string">&quot;/zh/guide/create.md&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>修改 docs/.vuepress/config.js 中的 themeConfig，参考官网 <a href="https://v1.vuepress.vuejs.org/zh/theme/default-theme-config.html" target="_blank" rel="noopener noreferrer">默认主题配置<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-js extra-class"><pre class="language-js"><code>themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 导航栏</span>
+  nav<span class="token operator">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./nav/zh'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 侧边栏</span>
+  sidebar<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'/zh/guide/'</span><span class="token operator">:</span> <span class="token function">getGuideSidebar</span><span class="token punctuation">(</span><span class="token string">'指南'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 最后更新时间</span>
+  lastUpdated<span class="token operator">:</span> <span class="token string">'上次更新'</span><span class="token punctuation">,</span> <span class="token comment">// string | boolean</span>
+
+  <span class="token comment">// 假定是 GitHub. 同时也可以是一个完整的 GitLab URL</span>
+  repo<span class="token operator">:</span> <span class="token string">'xiaoxuefengnian/wheatear'</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 以下为可选的编辑链接选项</span>
+
+  <span class="token comment">// 假如你的文档仓库和项目本身不在一个仓库：</span>
+  docsRepo<span class="token operator">:</span> <span class="token string">'xiaoxuefengnian/wheatear'</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 假如文档不是放在仓库的根目录下：</span>
+  docsDir<span class="token operator">:</span> <span class="token string">'docs'</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 假如文档放在一个特定的分支下：</span>
+  docsBranch<span class="token operator">:</span> <span class="token string">'master'</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为</span>
+  <span class="token comment">// &quot;GitHub&quot;/&quot;GitLab&quot;/&quot;Bitbucket&quot; 其中之一，或是 &quot;Source&quot;。</span>
+  <span class="token comment">// repoLabel: '查看源码',</span>
+
+  <span class="token comment">// 默认是 false, 设置为 true 来启用</span>
+  editLinks<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 默认为 &quot;Edit this page&quot;</span>
+  editLinkText<span class="token operator">:</span> <span class="token string">'编辑文档'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在 docs/zh/guide 目录下新建 create.md，内容即为本文档</p> <h2 id="添加插件"><a href="#添加插件" class="header-anchor">#</a> 添加插件</h2> <p>如 back-to-top</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> -D @vuepress/plugin-back-to-top@next
+<span class="token comment"># OR npm install -D @vuepress/plugin-back-to-top@next</span>
+</code></pre></div><p>在 docs/.vuepress/configs 中修改</p> <div class="language-js extra-class"><pre class="language-js"><code>plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">[</span><span class="token string">'@vuepress/back-to-top'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span>
+</code></pre></div><p>官网 <a href="https://v1.vuepress.vuejs.org/zh/plugin/" target="_blank" rel="noopener noreferrer">插件<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit"><!----> <div class="creat-time"><span class="prefix">发布时间: </span> <span class="time">
+        2019-12-07 18:28:43
+      </span></div> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">
+        2021-03-10 13:42:24
+      </span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/zh/搭建/deploy.html">
+          部署
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.dbe66a1e.js" defer></script><script src="/assets/js/6.2964ec12.js" defer></script><script src="/assets/js/2.e2347f80.js" defer></script><script src="/assets/js/1.e61c136f.js" defer></script><script src="/assets/js/105.aa731f11.js" defer></script>
+  </body>
+</html>
